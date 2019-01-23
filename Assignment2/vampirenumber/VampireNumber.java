@@ -57,7 +57,7 @@ public class VampireNumber {
         }
         int serialNumber = 1;
         for(long l:vampireNumber){
-            System.out.println(serialNumber + "." + l);
+            System.out.println(serialNumber + ". " + l);
             serialNumber++;
         }
     }
