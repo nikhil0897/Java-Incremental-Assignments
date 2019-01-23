@@ -1,14 +1,16 @@
 package solution1;
 
+/*
+ * @author Nikhil Sharma
+ */
 
 abstract class Rodent {
 
-    public abstract void size();
-    public abstract void speed();
-    public abstract void color();
+    public abstract void printSize();
+    public abstract void printSpeed();
+    public abstract void changeColor();
 
     Rodent() {
-
         System.out.println("Default constructor for class Rodent.");
         System.out.println();
     }
@@ -19,13 +21,13 @@ class Mouse extends Rodent {
     Mouse() {
         System.out.println("This is the default constructor for Mouse class.");
     }
-    public void size( ) {
+    public void printSize( ) {
         System.out.println("Size of Mouse is 5." );
     }
-    public void speed( ) {
+    public void printSpeed( ) {
         System.out.println("Speed of Mouse is 5." );
     }
-    public void color( ) {
+    public void changeColor( ) {
         System.out.println("Color of Mouse is black." );
     }
 }
@@ -36,13 +38,13 @@ class Gerbil extends Rodent {
         System.out.println("This is the default constructor for Gerbil class");
     }
 
-    public void size( ) {
+    public void printSize( ) {
         System.out.println("Size of Gerbil is 10." );
     }
-    public void speed( ) {
+    public void printSpeed( ) {
         System.out.println("Speed of Gerbil is 10." );
     }
-    public void color( ) {
+    public void changeColor( ) {
         System.out.println("Color of Gerbil is white." );
     }
 }
@@ -53,13 +55,13 @@ class Hamster extends Rodent {
         System.out.println("This is the default constructor for Hamster class.");
     }
 
-    public void size( ) {
+    public void printSize( ) {
         System.out.println("Size of Hamster is 15." );
     }
-    public void speed( ) {
+    public void printSpeed( ) {
         System.out.println("Speed of Hamster is 15." );
     }
-    public void color( ) {
+    public void changeColor( ) {
         System.out.println("Color of Hamster is brown." );
     }
 }
@@ -68,12 +70,12 @@ public class RodentHierarchy {
 
     public static void main( String[] ags ) {
 
-        Rodent[] array = {new Mouse(), new Gerbil(), new Hamster()};
-        for( Rodent R : array ) {
+        Rodent[] rodentGroup = {new Mouse(), new Gerbil(), new Hamster()};
+        for( Rodent R : rodentGroup ) {
             System.out.println();
-            R.size();
-            R.speed();
-            R.color();
+            R.printSize();
+            R.printSpeed();
+            R.changeColor();
         }
     }
 }

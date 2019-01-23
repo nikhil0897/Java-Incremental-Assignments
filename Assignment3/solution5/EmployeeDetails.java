@@ -19,6 +19,6 @@ public class EmployeeDetails {  //second class containing an inner class
 
     public static void main(String[] args) {
         Employee emp = new Employee();
-        Resume doc = new Resume( emp );
+        Resume document = new Resume( emp );
     }
 }

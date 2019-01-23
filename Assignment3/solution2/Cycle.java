@@ -1,5 +1,9 @@
 package solution2;
 
+/*
+ * @author Nikhil Sharma
+ */
+
 public class Cycle {
     Cycle(){
         System.out.println("Cycle created.");

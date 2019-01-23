@@ -1,14 +1,17 @@
 package solution2;
 
-public class ConstructorCall {
+/*
+ * @author Nikhil Sharma
+ */
 
-    ConstructorCall( ) {    //first call
-        this( 55, "Nikihl" );   //call to the parameterised constructor
+public class ConstructorCall {  //first call
+
+    ConstructorCall( ) {
+        this( 55, "Nikhil" );   //call to the parameterised constructor
         System.out.println("This is the default constructor.");
     }
 
     ConstructorCall( int a, String S ) {
-
         System.out.println(S + " scored " + a + " runs in last match.");
     }
 

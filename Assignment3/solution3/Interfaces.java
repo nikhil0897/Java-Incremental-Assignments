@@ -1,22 +1,26 @@
 package solution3;
 
+/*
+ * @author Nikhil Sharma
+ */
+
 interface InterfaceOne {
-    void name();
-    void id();
+    void printName();
+    void printID();
 }
 
 interface InterfaceTwo {
-    void address();
-    void number();
+    void printAddress();
+    void phoneNumber();
 }
 
 interface InterfaceThree {
-    void email();
-    void aadharNumber();
+    void checkEmail();
+    void printAadharNumber();
 }
 
 interface InterfaceFour extends InterfaceOne,InterfaceTwo,InterfaceThree{
-    void salary();
+    void checkSalary();
 }
 
 class Mentor {
@@ -27,45 +31,55 @@ class Mentor {
 
 class Employee extends Mentor implements InterfaceFour {
 
-    public void address() {
+    public void printAddress() {
         System.out.println("Employee address registered.");
     }
 
-    public void name() {
+
+    public void printName() {
         System.out.println("Name of the Employee is Nikhil Sharma.");
     }
 
-    public void email() {
+
+    public void checkEmail() {
         System.out.println("Employee email registered.");
     }
 
-    public void number() {
+
+    public void phoneNumber() {
         System.out.println("Phone number registered.");
     }
 
-    public void aadharNumber() {
+
+    public void printAadharNumber() {
         System.out.println("Aadhar number registered.");
     }
 
-    public void id() {
+
+    public void printID() {
         System.out.println("Employee id given.");
     }
 
-    public void salary() {
+
+    public void checkSalary() {
         System.out.println("Employee salary registered.");
     }
 
+
     void employeeOne(InterfaceOne details1){
-        details1.name();
+        details1.printName();
     }
+
     void employeeTwo(InterfaceTwo details2){
-        details2.address();
+        details2.printAddress();
     }
+
     void employeeThree(InterfaceThree details3){
-        details3.aadharNumber();
+        details3.printAadharNumber();
     }
+
     void employeeFour(InterfaceFour details4){
-        details4.salary();
+        details4.checkSalary();
     }
 }
 

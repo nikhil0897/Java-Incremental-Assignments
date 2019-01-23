@@ -1,5 +1,9 @@
 package solution4;
 
+/*
+ * @author Nikhil Sharma
+ */
+
 interface Cycle {
 
 }
@@ -43,9 +47,8 @@ class UnicycleFactory {
 public class CycleInterface {
 
     public static void main(String[] args) {
-
-        Cycle cycle1 = BicycleFactory.getBicycle();
-        Cycle cycle2 = UnicycleFactory.getUnicycle();
-        Cycle cycle3 = TricycleFactory.getTricycle();
+        Cycle firstCycle = BicycleFactory.getBicycle();
+        Cycle secondCycle = UnicycleFactory.getUnicycle();
+        Cycle thirdCycle = TricycleFactory.getTricycle();
     }
 }
