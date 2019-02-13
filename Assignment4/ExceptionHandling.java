@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-/*
+/**
  * @author Nikhil Sharma
  */
 
@@ -8,10 +8,11 @@ class ExceptionFirst extends Exception {}
 class ExceptionSecond extends Exception {}
 class ExceptionThird extends Exception {}
 
-/* I have created 3 custom exceptions here
- * 1. When the number is less than 50
- * 2. When the number is greater than equal to 50 but less than 100
- * 3. When the number is greater than equal to 100 but less than 200
+/**
+ * I have created 3 custom exceptions here
+ *  1. When the number is less than 50
+ *  2. When the number is greater than equal to 50 but less than 100
+ *  3. When the number is greater than equal to 100 but less than 200
  */
 
 public class ExceptionHandling {
@@ -60,7 +61,7 @@ public class ExceptionHandling {
     }
 }
 
-/*
+/**
  * Testcases:
  * 1. 999
  *     Output: Throwing Null pointer exception.
