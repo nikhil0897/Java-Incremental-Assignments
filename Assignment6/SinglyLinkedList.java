@@ -1,4 +1,4 @@
-/*
+/**
  * @author Nikhil Sharma
  */
 
@@ -21,7 +21,7 @@ class Node<typeLinkedList>{      //node structure of the linked list
     }
 }
 
-/*
+/**
  * Class SList is generic class which is used to create the singly linked list.
  * This class has an instance variable of type Node that stores the value of the head of the linked list.
  */
@@ -47,7 +47,7 @@ class SList<typeLinkedList>{
     }
 }
 
-/*
+/**
  * This is an iterator class. It has two instance variable of type Node<typeLinkedList> one of which
  * points to the current node and other points to the head of the list.
  */
@@ -74,7 +74,7 @@ class SListIterator<typeLinkedList>{     //iterating through the linked list
         return curr;
     }
 
-    /*
+    /**
      * @param typeLinkedList data, basically it is the node which has to be added to the linked list
      */
     public void insert(typeLinkedList data) {    //insertion at the end
@@ -83,7 +83,7 @@ class SListIterator<typeLinkedList>{     //iterating through the linked list
         curr = curr.next;
     }
 
-    /*
+    /**
      * This method is there to remove the node from the end of the linked list
      */
     public void remove(){   //deletion at the end
