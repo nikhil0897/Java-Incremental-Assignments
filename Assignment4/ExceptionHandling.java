@@ -4,9 +4,17 @@ import java.util.Scanner;
  * @author Nikhil Sharma
  */
 
-class ExceptionFirst extends Exception {}
-class ExceptionSecond extends Exception {}
-class ExceptionThird extends Exception {}
+class ExceptionFirst extends Exception {
+
+}
+
+class ExceptionSecond extends Exception {
+
+}
+
+class ExceptionThird extends Exception {
+
+}
 
 /**
  * I have created 3 custom exceptions here
