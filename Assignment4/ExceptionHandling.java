@@ -29,14 +29,17 @@ public class ExceptionHandling {
 
         if (checkGrade < 40) {
             System.out.println("Failed the examination.");
+            System.out.println("Throwing ExceptionFirst");
             throw new ExceptionFirst();
         }
         else if (checkGrade >= 40 && checkGrade < 80) {
             System.out.println("Passed the examination with B grade.");
+            System.out.println("Throwing ExceptionSecond");
             throw new ExceptionSecond();
         }
         else if (checkGrade >= 80 && checkGrade <= 100) {
             System.out.println("Got an outstanding A grade.");
+            System.out.println("Throwing ExceptionThird");
             throw new ExceptionThird();
         }
         else {
@@ -73,11 +76,13 @@ public class ExceptionHandling {
  * Test cases:
  * 1. 99
  * Output: Got an outstanding A grade.
+ *         Throwing ExceptionThird
  *         Exception caught.
  *         Finally clause is executed.
  *
  * 2. 39
- * Output: Failed the examination
+ * Output: Failed the examination.
+ *         Throwing ExceptionFirst
  *         Exception caught.
  *         Finally clause is executed.
  *
@@ -87,6 +92,12 @@ public class ExceptionHandling {
  *
  * 4. 50
  * Output: Passed the examination with B grade.
+ *         Throwing ExceptionSecond
+ *         Exception caught.
+ *         Finally clause is executed.
+ *
+ * 5. 0
+ * Output: NullPointerException thrown.
  *         Exception caught.
  *         Finally clause is executed.
  *
