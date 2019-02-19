@@ -7,7 +7,7 @@ package solution4;
 public class ConstructorUsage {
 
         ConstructorUsage(String name ) {
-            System.out.println("String: " + name);
+            System.out.println("Name: " + name);
         }
 
         public static void main( String[] args ) {
@@ -18,3 +18,16 @@ public class ConstructorUsage {
             }
         }
 }
+
+/** Output: 
+  * Name: Nikhil
+  * Name: Nikhil
+  * Name: Nikhil
+  * Name: Nikhil
+  * Name: Nikhil
+  * Name: Nikhil
+  * Name: Nikhil
+  * Name: Nikhil
+  * Name: Nikhil
+  * Name: Nikhil
+  */
