@@ -1,22 +1,22 @@
 package solution2;
 
-/*
+/**
  * @author Nikhil Sharma
  */
 
-public class ConstructorCall {  //first call
+public class ConstructorCall {
 
-    ConstructorCall( ) {
-        this( 55, "Nikhil" );   //call to the parameterised constructor
+    ConstructorCall() { // will get a call as soon as an object to the class is created
+        this(55, "Nikhil"); // call to the parameterised constructor
         System.out.println("This is the default constructor.");
     }
 
-    ConstructorCall( int a, String S ) {
-        System.out.println(S + " scored " + a + " runs in last match.");
+    ConstructorCall(int runs, String name) {
+        System.out.println(name + " scored " + runs + " runs in last match.");
     }
 
-    public static void main( String[] args ) {
+    public static void main(String[] args) {
 
-        ConstructorCall obj = new ConstructorCall();    //default constructor is called as soon as an object of the class is created
+        ConstructorCall printInput = new ConstructorCall(); // default constructor is called as soon as an object of the class is created
     }
 }

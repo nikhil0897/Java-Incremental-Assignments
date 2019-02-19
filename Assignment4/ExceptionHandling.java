@@ -31,18 +31,15 @@ public class ExceptionHandling {
             System.out.println("Failed the examination.");
             System.out.println("Throwing ExceptionFirst");
             throw new ExceptionFirst();
-        }
-        else if (checkGrade >= 40 && checkGrade < 80) {
+        } else if (checkGrade >= 40 && checkGrade < 80) {
             System.out.println("Passed the examination with B grade.");
             System.out.println("Throwing ExceptionSecond");
             throw new ExceptionSecond();
-        }
-        else if (checkGrade >= 80 && checkGrade <= 100) {
+        } else if (checkGrade >= 80 && checkGrade <= 100) {
             System.out.println("Got an outstanding A grade.");
             System.out.println("Throwing ExceptionThird");
             throw new ExceptionThird();
-        }
-        else {
+        } else {
             System.out.println("Invalid score.");
         }
     }
@@ -57,8 +54,7 @@ public class ExceptionHandling {
             if (inputNumber == 0) {
                 System.out.println("NullPointerException thrown.");
                 throw new NullPointerException();
-            }
-            else
+            } else
                 throwException(inputNumber);
         }
 

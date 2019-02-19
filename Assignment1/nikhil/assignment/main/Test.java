@@ -4,12 +4,12 @@ import nikhil.assignment.data.Data;
 
 public class Test {
 
-    public static void main( String[] args ) {
+    public static void main(String[] args) {
 
         Data file = new Data();
-        file.printValue();   //non-static call to the first printValue method
-        file.print();    //non-static call to second print method
+        file.printValue(); // non-static call to printValue()
+        file.printData(); // non-static call to printData()
 
-        //Singleton.output();   ///static call to a non-static method of class Singleton
+        //Singleton.output(); ///static call to a non-static method is not allowed in Java
     }
 }

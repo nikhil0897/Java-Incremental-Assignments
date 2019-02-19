@@ -1,28 +1,27 @@
 package solution2;
 
-/*
+/**
  * @author Nikhil Sharma
  */
 
 public class Cycle {
-    Cycle(){
+    Cycle() {
         System.out.println("Cycle created.");
     }
 }
 
-class Unicycle extends Cycle{
-    public void balance(){
+class Unicycle extends Cycle {
+    public void balance() {
         System.out.println("This balance is for Unicycle.");
     }
 }
 
-class Bicycle extends Cycle{
-    public void balance(){
+class Bicycle extends Cycle {
+    public void balance() {
         System.out.println("This balance is for Bicycle.");
     }
 }
 
-class Tricycle extends Cycle{
+class Tricycle extends Cycle {
 
 }
-
